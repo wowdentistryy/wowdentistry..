@@ -1270,39 +1270,7 @@ function scrollContainer(direction) {
     <!-- WhatsApp Integration Button with Tooltip -->
     
     
-    <script>
-      // Function to open WhatsApp chat with specified message
-    function openWhatsAppChat() {
-      // Replace '1234567890' with your WhatsApp number
-      var phoneNumber = '+971 55 909 8802';
-      
-      // Get the message from the hidden div
-      var message = document.getElementById('whatsapp-message').innerText;
-      
-      // Encode the message for use in URL
-      var encodedMessage = encodeURIComponent(message);
     
-      // Construct the WhatsApp URL with phone number and message
-      var whatsappURL = 'https://wa.me/' + 971559098802 + '/?text=' + encodedMessage;
-    
-      // Open the WhatsApp chat window in a new tab
-      window.open(whatsappURL, '_blank');
-    }
-    
-    // Event listener to open WhatsApp chat when button is clicked
-    document.getElementById('whatsapp-button').addEventListener('click', function() {
-      // Open WhatsApp chat with specified message
-      openWhatsAppChat();
-      
-      // Hide the tooltip after button click
-      var tooltip = document.querySelector('.tooltip .tooltiptext');
-      if (tooltip) {
-        tooltip.style.visibility = 'hidden';
-        tooltip.style.opacity = 0;
-      }
-    });
-    
-    </script>
     
     
     
